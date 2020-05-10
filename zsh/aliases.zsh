@@ -1,0 +1,1 @@
+alias szsh="source ~/.zshrc"
