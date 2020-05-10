@@ -3,7 +3,7 @@
 symlink() {
     module=$1
     filename=$2
-    from=$HOME/.dotfiles/$module/$filename
+    from=$HOME/.dotfiles/src/$module/$filename
     to=$HOME/.$filename
     echo "$from --> $to"
     rm -rf $to
