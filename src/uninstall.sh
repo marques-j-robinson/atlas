@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh)"
+curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh" | bash
 
 # Remove artifacts
 rm -rf .oh-my-zsh

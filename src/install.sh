@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Homebrew & Packages
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/master/install.sh" | bash
 
 brew install coreutils
 brew install zsh
@@ -11,4 +11,4 @@ brew install tmux
 brew install python
 
 # Oh My Zsh
-/bin/bash -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+curl -fsSL "https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh" | bash
