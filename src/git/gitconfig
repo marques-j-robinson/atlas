@@ -3,7 +3,7 @@
     cm = commit -m
 [core]
     editor = vim
-    excludefile = ~/.gitignore
+    excludesfile = ~/.gitignore
 [difftool "sourcetree"]
     cmd = opendiff \"$LOCAL\" \"$REMOTE\"
     path = 
