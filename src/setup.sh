@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Create directories
+mkdir ~/github
+
+# Symlink
 symlink() {
     module=$1
     filename=$2
