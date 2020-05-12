@@ -29,7 +29,7 @@ symlink tmux tmux.conf
 # Python version 3
 brew install python
 
-# Node
+# Node (https://github.com/nijicha/install_nodejs_and_yarn_homebrew)
 mkdir $HOME/.nvm
 brew install nvm
 source $HOME/.zshrc # Make nvm command available
