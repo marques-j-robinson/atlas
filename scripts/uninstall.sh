@@ -9,9 +9,9 @@ rm .zshrc
 rm .gitconfig && rm .gitignore
 rm .vimrc
 rm .tmux.conf
+rm -rf .nvm
 
 # Re-enable bash as default shell
 chsh -s /bin/bash
 
-# Force exit
-exit
+exit # Force exit
