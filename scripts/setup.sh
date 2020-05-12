@@ -32,7 +32,7 @@ brew install python
 # Node
 mkdir $HOME/.nvm
 brew install nvm
-source $HOME/.zshrc
+source $HOME/.zshrc # Make nvm command available
 nvm install 8
 brew install yarn
 brew uninstall --ignore-dependencies node
