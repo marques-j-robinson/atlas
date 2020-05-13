@@ -11,7 +11,5 @@ rm .vimrc
 rm .tmux.conf
 rm -rf .nvm
 
-# Re-enable bash as default shell
-chsh -s /bin/bash
-
+chsh -s /bin/bash # Re-enable bash as default shell
 exit # Force exit
