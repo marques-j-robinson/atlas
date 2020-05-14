@@ -22,3 +22,13 @@ else
     echo "Installing Oh My Zsh..."
     curl -L http://install.ohmyz.sh | sh
 fi
+
+# 3. Install Homebrew
+
+if test ! $(which brew); then
+    echo "Installing Homebrew..."
+    curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/master/install.sh" | bash
+else
+    echo "Homebrew is already installed. Skipping..."
+fi
+
