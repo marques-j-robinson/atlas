@@ -21,6 +21,7 @@ if [ -d $ZSH ]; then
 else
     echo "Installing Oh My Zsh..."
     curl -L http://install.ohmyz.sh | sh
+    symlink zsh zshrc
 fi
 
 # 3. Install Homebrew
