@@ -24,3 +24,5 @@
 #     by the local ones
 [include]
     path = ~/.gitconfig.local
+
+## END
