@@ -24,16 +24,27 @@ else
     symlink zsh zshrc
 fi
 
-# 3. Install Homebrew
+# 3. Install NVM
 
-if test ! $(which brew); then
+if ! type "nvm" > /dev/null; then
+    echo "Installing NVM..."
+    curl -fsSL "https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh " | bash
+    export NVM_DIR="/Users/marquesrobinson/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+else
+    echo "NVM is already installed. Skipping..."
+fi
+
+# 4. Install Homebrew
+
+if ! type "brew" > /dev/null; then
     echo "Installing Homebrew..."
     curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/master/install.sh" | bash
 else
     echo "Homebrew is already installed. Skipping..."
 fi
 
-# 4. Homebrew packages
+# 5. Homebrew packages
 
 echo "Checking for Homebrew updates..."
 brew update
@@ -43,8 +54,19 @@ brew upgrade
 
 echo "Installing new packages..."
 brew install tmux
-brew install nvm
+brew install python
 brew install yarn
 brew uninstall --ignore-dependencies node
+
+# 6. Legacy Node version for MVPindex
+
+echo "Installing Node version 8 for legacy MVPindex platform"
+
+## Ensure the nvm command is available
+# source $HOME/.zshrc
+nvm install 8
+## Link the newly installed version of node to /local/Cellar (Homebrew path)
+## so yarn has access to version 8 of node
+ln -s $HOME/.nvm/versions/node/ /usr/local/Cellar/
 
 ## END
