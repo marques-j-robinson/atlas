@@ -69,4 +69,9 @@ nvm install 8
 ## so yarn has access to version 8 of node
 ln -s $HOME/.nvm/versions/node/ /usr/local/Cellar/
 
+# 7. Install awslogs for cloudwatch logging
+
+pip install awslogs
+npm install -g bunyan
+
 ## END
