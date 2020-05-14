@@ -33,3 +33,18 @@ else
     echo "Homebrew is already installed. Skipping..."
 fi
 
+# 4. Homebrew packages
+
+echo "Checking for Homebrew updates..."
+brew update
+
+echo "Checking for upgrades to existing Homebrew packages..."
+brew upgrade
+
+echo "Installing new packages..."
+brew install tmux
+brew install nvm
+brew install yarn
+brew uninstall --ignore-dependencies node
+
+## END
