@@ -54,6 +54,7 @@ brew upgrade
 
 echo "Installing new packages..."
 brew install tmux
+brew install neovim
 brew install python
 brew install kafkacat
 brew install yarn
