@@ -33,7 +33,7 @@ fi
 brew update
 brew upgrade
 
-brew install curl wget git tmux python
+brew install curl wget git tmux python3 vim
 
 # 2. ZSH and Oh-My-Zsh
 
