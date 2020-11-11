@@ -1,7 +1,6 @@
 export PATH=$HOME/bin:$PATH
 export PATH=$PATH:/usr/local/mysql/bin
 export ZSH=$HOME/.oh-my-zsh
-export EDITOR="nvim"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -17,9 +16,6 @@ ZSH_CUSTOM=$HOME/.dotfiles/zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git dotenv)
 
 source $ZSH/oh-my-zsh.sh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
