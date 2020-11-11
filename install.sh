@@ -5,6 +5,7 @@
 ## 1. Homebrew
 ## 2. ZSH and Oh-My-Zsh
 ## 3. Git
+## 4. Vim
 
 # Custom symlink function
 
@@ -15,6 +16,7 @@
 symlink() {
     from=$HOME/.dotfiles/$1/$2
     to=$HOME/.$2
+    echo "Creating a symbolic link from $from to $to"
     rm -rf $to
     ln -s $from $to
 }
@@ -49,5 +51,12 @@ symlink zsh zshrc
 echo "Configure global Git settings..."
 symlink git gitconfig
 symlink git gitignore
+
+# 4. Vim
+
+echo "Installing Vundle, Vim package manager..."
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+symlink vim vimrc
 
 ## END
