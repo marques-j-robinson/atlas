@@ -1,6 +1,7 @@
 syntax on
 
 set nu
+set ts=4 sts=4 sw=4 et sta
 set encoding=utf-8
 set cb=unnamed
 set splitbelow
