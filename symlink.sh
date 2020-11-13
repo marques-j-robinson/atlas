@@ -28,3 +28,4 @@ vim_symlink base.vim
 vim_symlink nerdtree.vim
 vim_symlink simpylfold.vim
 vim_symlink YouCompleteMe.vim
+vim_symlink syntastic.vim
