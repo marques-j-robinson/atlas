@@ -29,6 +29,7 @@ Plugin 'nvie/vim-flake8'
 
 " Utils
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-surround'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
