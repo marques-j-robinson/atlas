@@ -36,6 +36,15 @@ map ; :
 map <space> 10j
 map <bs> 10k
 
+" auto complete key bindings
+inoremap ( ()<Esc>i
+inoremap { {}<Esc>i
+inoremap {<CR> {<CR>}<Esc>O
+inoremap [ []<Esc>i
+inoremap < <><Esc>i
+inoremap ' ''<Esc>i
+inoremap " ""<Esc>i
+
 " split navigation mappings
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
