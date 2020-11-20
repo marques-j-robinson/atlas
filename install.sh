@@ -12,7 +12,13 @@ fi
 brew update
 brew upgrade
 
-brew install curl wget git tmux python3 vim
+## 1.1 Homebrew Packages
+
+brew install curl wget
+brew install git
+brew install python3 
+brew install vim
+brew install tmux 
 
 # 2. ZSH and Oh-My-Zsh
 
