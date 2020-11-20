@@ -24,6 +24,7 @@ root_symlink zsh zshrc
 root_symlink git gitconfig
 root_symlink git gitignore
 root_symlink vim vimrc
+root_symlink tmux tmux.conf
 vim_symlink base.vim
 vim_symlink nerdtree.vim
 vim_symlink simpylfold.vim
