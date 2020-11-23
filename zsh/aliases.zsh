@@ -1,7 +1,8 @@
 alias szsh="source ~/.zshrc"
 
 # Tmux
-alias tmux="TERM=screen-256color-bce tmux"
+alias tmux="TERM=screen-256color-bce tmux -2"
+alias stmux="tmux source-file ~/.tmux.conf"
 
 # Vim
 alias v="vim"
@@ -9,3 +10,4 @@ alias v="vim"
 # Python
 alias python="python3"
 alias pip="pip3"
+alias svenv="source venv/bin/activate"
