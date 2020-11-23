@@ -24,9 +24,25 @@ source $ZSH/oh-my-zsh.sh
 export TERM=xterm-256color
 
 function sv() {
-    source venv/bin/activate &&
+# source venv/bin/activate &&  # commented out by conda initialize
     tmux set-environment VIRTUAL_ENV $VIRTUAL_ENV
 }
 if [ -n "$VIRTUAL_ENV" ]; then
-    source $VIRTUAL_ENV/bin/activate;
+# source $VIRTUAL_ENV/bin/activate;  # commented out by conda initialize
 fi
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/themelowone/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/themelowone/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/themelowone/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/themelowone/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
