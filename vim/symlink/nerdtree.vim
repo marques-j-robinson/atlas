@@ -6,7 +6,7 @@ let NERDTreeIgnore=['\.pyc$', '\~$', 'node_modules', 'es5', 'dist']
 let NERDTreeCascadeSingleChildDir=0
 let NERDTreeQuitOnOpen=1
 let NERDTreeAutoDeleteBuffer=1
-let g:NERDTreeMapOpenSplit='s'
+let g:NERDTreeMapOpenSplit='h'
 let g:NERDTreeMapOpenVSplit='v'
 
 map <C-e> :NERDTreeToggle<CR>
