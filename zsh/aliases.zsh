@@ -11,3 +11,5 @@ alias v="vim"
 alias python="python3"
 alias pip="pip3"
 alias svenv="source venv/bin/activate"
+
+alias pyta='python -m unittest discover -p "*_test.py"'
