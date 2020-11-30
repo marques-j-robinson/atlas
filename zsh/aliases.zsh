@@ -3,6 +3,7 @@ alias szsh="source ~/.zshrc"
 # Tmux
 alias tmux="TERM=screen-256color-bce tmux -2"
 alias stmux="tmux source-file ~/.tmux.conf"
+alias tmuxl="tmux ls"
 
 # Vim
 alias v="vim"

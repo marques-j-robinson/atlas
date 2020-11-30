@@ -27,6 +27,7 @@ root_symlink vim vimrc
 root_symlink tmux tmux.conf
 vim_symlink base.vim
 vim_symlink nerdtree.vim
+vim_symlink nerdcommenter.vim
 vim_symlink simpylfold.vim
 vim_symlink YouCompleteMe.vim
 vim_symlink syntastic.vim

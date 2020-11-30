@@ -28,6 +28,7 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'nvie/vim-flake8'
 
 " Utils
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-syntastic/syntastic'
@@ -40,6 +41,7 @@ filetype plugin indent on    " required
 
 source ~/.vim/base.vim
 source ~/.vim/nerdtree.vim
+source ~/.vim/nerdcommenter.vim
 source ~/.vim/simpylfold.vim
 source ~/.vim/YouCompleteMe.vim
 source ~/.vim/syntastic.vim
