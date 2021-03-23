@@ -1,3 +1,7 @@
+# Util
+alias cls="clear"
+
+# Zsh
 alias szsh="source ~/.zshrc"
 
 # Tmux

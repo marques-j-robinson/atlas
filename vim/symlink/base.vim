@@ -21,10 +21,13 @@ au BufNewFile,BufRead *.py
 \ set fileformat=unix
 
 " Other filetype indentation rules
-au BufNewFile,BufRead *.js, *.html, *.css
-\ set tabstop=2 |
-\ set softtabstop=2 |
-\ set shiftwidth=2
+au BufNewFile,BufRead *.js,*.html,*.css
+\ set tabstop=4 |
+\ set softtabstop=4 |
+\ set shiftwidth=4 |
+\ set expandtab |
+\ set autoindent |
+\ set fileformat=unix
 
 " Flag unnecessary whitespace
 highlight BadWhitespace ctermbg=red guibg=darkred
