@@ -3,7 +3,7 @@
     cm = commit -m
 [core]
     editor = vim
-	excludesfile = /Users/marquesrobinson/.gitignore
+	excludesfile = ~/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
