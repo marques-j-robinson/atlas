@@ -14,3 +14,8 @@ alias pip="pip3"
 alias svenv="source venv/bin/activate"
 
 alias pyta='python -m unittest discover -p "*_test.py"'
+
+# Git
+alias gst="git s"
+alias commit="git add . && git cm"
+alias diff="git diff"
