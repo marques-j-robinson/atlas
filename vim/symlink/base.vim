@@ -9,6 +9,7 @@ set splitright
 set foldmethod=indent
 set foldlevel=99
 set mouse=a
+set colorcolumn=72
 
 " Proper PEP 8 indentation
 au BufNewFile,BufRead *.py
