@@ -1,0 +1,51 @@
+#!/bin/bash
+
+cd "$(dirname "$0")/.."
+DOTFILES_ROOT=$(pwd -P)
+
+set -e
+
+echo ''
+
+function setup_gitconfig {
+  if ! [ -f git/gitconfig.local.symlink ]
+  then
+    printf 'setup gitconfig'
+
+    git_credential='cache'
+    if [ "$(uname -s)" == "Darwin" ]
+    then
+      git_credential='osxkeychain'
+    fi
+
+    printf ' - What is your github author name?'
+    read -e git_authorname
+    printf ' - What is your github author email?'
+    read -e git_authoremail
+
+    sed -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" git/gitconfig.local.symlink.example > git/gitconfig.local.symlink
+
+    printf 'gitconfig'
+  fi
+}
+
+function link {
+    src=$DOTFILES_ROOT/$1
+    dst=$2
+    ln -sfv "$src" "$dst"
+}
+
+function symlink_dotfiles {
+    printf 'symlinking dotfiles'
+    for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink' -not -path '*.git*')
+    do
+        dst="$HOME/.$(basename "${src%.*}")"
+        link "$src" "$dst"
+    done
+}
+
+setup_gitconfig
+symlink_dotfiles
+
+echo ''
+echo ' Bootstrap Complete!'
