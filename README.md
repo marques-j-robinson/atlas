@@ -8,14 +8,16 @@ A.K.A. my dotfiles.
 ```
 git clone https://github.com/marques-j-robinson/atlas.git ~/.dotfiles && cd ~/.dotfiles
 ```
+
 2. Run boostrap script.
 This will setup git and symlink the appropriate files in `~/.dotfiles` to your home directory.
 ```
-    script/bootstrap
+script/bootstrap
 ```
+
 3. Run install script. This script iterates through the directories and executes any `install` script.
 ```
-    script/install
+script/install
 ```
 
 ## Homebrew
