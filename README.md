@@ -8,17 +8,9 @@ A.K.A. my dotfiles.
 ```
 git clone https://github.com/marques-j-robinson/atlas.git ~/.dotfiles && cd ~/.dotfiles
 ```
-
 2. Run boostrap script.
 This will setup some configs for git and symlink the appropriate files in `~/.dotfiles` to your home directory.
-```
-script/bootstrap
-```
-
 3. Run install script. This script iterates through the directories and executes the `install` script.
-```
-script/install
-```
 
 After installation, everything should be up-to-date and ready to be used.
 From time to time, run the `dot` script located inside of `bin/`.
