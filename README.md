@@ -20,6 +20,12 @@ script/bootstrap
 script/install
 ```
 
+After installation, everything should be up-to-date and ready to be used.
+From time to time, run the `dot` script located inside of `bin/`.
+
+`dot` is a simple shell script that ensures the environment is fresh and up-to-date.
+
+
 ## Homebrew
 [Documentation](https://brew.sh/)
 
@@ -31,11 +37,6 @@ For Zsh configuration management, I am using [Oh My Zsh](https://ohmyz.sh/).
 
 The main Zsh config file is: `zsh/zshrc.symlink`.
 There are a few paths that will be different per machine.
-
-## Atlas
-Atlas is a simple shell script that is located inside of `bin/`.
-This should be run occassionally to ensure that the environment is fresh and up-to-date.
-
 
 ## Inspiration
 Here are a few links to articles and repos that helped me get started:
