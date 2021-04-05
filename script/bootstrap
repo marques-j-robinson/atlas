@@ -42,7 +42,7 @@ function setup_gitconfig {
 }
 
 function link {
-    src=$DOTFILES_ROOT/$1
+    src=$1
     dst=$2
     ln -sfv "$src" "$dst"
 }
