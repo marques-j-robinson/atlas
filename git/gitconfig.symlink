@@ -1,0 +1,44 @@
+[user]
+	user = marques-j-robinson
+	email = marques.j.robinson@gmail.com
+[core]
+    editor = nvim
+	excludesfile = ~/.gitignore_global
+[push]
+    default = current
+[github]
+	user = marques-j-robinson
+	email = marques.j.robinson@gmail.com
+[color]
+	ui = true
+[color "status"]
+    changed = yellow
+    added = green
+    untracked = cyan
+[alias]
+	aa = add --all
+	br = branch
+	di = diff
+	ds = diff --staged
+	ca = commit --append
+	can = commit --append --no-edit
+    cm = commit -m
+    co = checkout
+    st = status
+	s = stash
+[diff]
+    tool = vimdiff
+[color "diff-highlight"]
+    oldNormal = red
+    oldHighlight = red "#500000"
+    newNormal = green
+    newHighlight = green "#003000"
+[color "diff"]
+    meta = 11
+    frag = magenta bold
+    commit = yellow bold
+    old = red
+    new = green
+    whitespace = "#ffff00" reverse
+[include]
+    path = ~/.gitconfig.local

@@ -7,10 +7,22 @@ set -e
 
 echo ''
 
+info () {
+  printf "\r  [ \033[00;34m..\033[0m ] $1\n"
+}
+
+user () {
+  printf "\r  [ \033[0;33m??\033[0m ] $1\n"
+}
+
+success () {
+  printf "\r\033[2K  [ \033[00;32mOK\033[0m ] $1\n"
+}
+
 function setup_gitconfig {
   if ! [ -f git/gitconfig.local.symlink ]
   then
-    printf 'setup gitconfig'
+    info 'setup gitconfig'
 
     git_credential='cache'
     if [ "$(uname -s)" == "Darwin" ]
@@ -18,14 +30,14 @@ function setup_gitconfig {
       git_credential='osxkeychain'
     fi
 
-    printf ' - What is your github author name?'
+    user ' - What is your github author name?'
     read -e git_authorname
-    printf ' - What is your github author email?'
+    user ' - What is your github author email?'
     read -e git_authoremail
 
     sed -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" git/gitconfig.local.symlink.example > git/gitconfig.local.symlink
 
-    printf 'gitconfig'
+    success 'gitconfig'
   fi
 }
 
@@ -36,7 +48,7 @@ function link {
 }
 
 function symlink_dotfiles {
-    printf 'symlinking dotfiles'
+    info 'symlinking dotfiles'
     for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink' -not -path '*.git*')
     do
         dst="$HOME/.$(basename "${src%.*}")"
