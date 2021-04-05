@@ -1,25 +1,21 @@
-# Util
-alias cls="clear"
-
-# Zsh
-alias szsh="source ~/.zshrc"
-
-# Tmux
-alias tmux="TERM=screen-256color-bce tmux -2"
-alias stmux="tmux source-file ~/.tmux.conf"
-alias tmuxl="tmux ls"
-
-# Vim
-alias v="vim"
-
-# Python
-alias python="python3"
-alias pip="pip3"
-alias svenv="source venv/bin/activate"
-
-alias pyta='python -m unittest discover -p "*_test.py"'
-
-# Git
+# git
 alias gst="git s"
 alias commit="git add . && git cm"
-alias diff="git diff"
+
+# tmux
+alias t="tmux -u -2"
+alias ta="t attach -t"
+alias td="t detach"
+alias tks="t kill-session"
+
+# vim
+alias v=nvim
+alias vi=nvim
+alias vim=nvim
+alias vf='nvim "$(fzf)"'
+
+# python
+alias python=python3
+alias pip=pip3
+alias svenv="source venv/bin/activate"
+alias pyta='python -m unittest discover -p "*_test.py"'
