@@ -3,38 +3,27 @@ The Primordial Titan who carried the weight of the heavens on his back.
 
 A.K.A. my dotfiles.
 
-## Installation Steps
+## Setup
 1. Clone this repo to `~/.dotfiles`. Everything is maintained within `~/.dotfiles`.
 ```
 git clone https://github.com/marques-j-robinson/atlas.git ~/.dotfiles && cd ~/.dotfiles
 ```
-2. Run boostrap script.
-This will setup some configs for git and symlink the appropriate files in `~/.dotfiles` to your home directory.
-3. Run install script. This script iterates through the directories and executes the `install` script.
+2. Execute `setup.sh`.
 
-## Notes
+This script will install programs such as [Xcode](https://developer.apple.com/xcode/),
+[Homebrew](https://brew.sh/), [Zsh](https://www.zsh.org/),
+[Oh My Zsh](https://ohmyz.sh/), and [Vim Plug](https://github.com/junegunn/vim-plug).
 
-After installation, everything should be up-to-date and ready to be used.
-From time to time, run the `dot` script located inside of `bin/`.
+3. Execute `brew.sh`.
 
-`dot` is a simple shell script that ensures the environment is fresh and up-to-date.
+This script will update Homebrew, upgrade formulae, and utilize the `brew bundle` command.
+This command executes the contents of `Brewfile`.
 
-### Zsh
-I am using [Zsh](https://www.zsh.org/) instead of Bash as the default shell.
-For Zsh configuration management, I am using [Oh My Zsh](https://ohmyz.sh/).
+For more info about the `brew bundle` command, [here](https://thoughtbot.com/blog/brewfile-a-gemfile-but-for-homebrew).
 
-The main Zsh config file is: `zsh/zshrc.symlink`.
-There are a few paths that will be different per machine.
+4. Execute `link.sh`.
 
-### Important Programs
-
-[Homebrew](https://brew.sh/) is used to install things such as Zsh, Python, Google Chrome.
-
-[iTerm2](https://iterm2.com/) is my preferred command-line application.
-
-[Tmux](https://github.com/tmux/tmux/wiki) provides a nice way of working with the terminal.
-
-[Neovim](https://neovim.io/) - primary text editor.
+This script will establish symbolic links between `~/.dotfiles` and the `$HOME` directory.
 
 ## Inspiration
 Here are a few links to articles and repos that helped me get started:
