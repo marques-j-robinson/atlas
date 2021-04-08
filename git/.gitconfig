@@ -1,9 +1,9 @@
 [user]
-	user = marques-j-robinson
+	name = marques-j-robinson
 	email = marques.j.robinson@gmail.com
 [core]
     editor = nvim
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.gitignore
 [push]
     default = current
 [github]
@@ -40,5 +40,3 @@
     old = red
     new = green
     whitespace = "#ffff00" reverse
-[include]
-    path = ~/.gitconfig.local
