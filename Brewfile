@@ -1,3 +1,7 @@
+# Taps
+tap 'homebrew/cask'
+tap 'homebrew/cask-fonts'
+
 # Binaries
 brew 'awscli'
 brew 'coreutils' # Those that come with macOS are outdated
@@ -16,3 +20,6 @@ cask 'google-chrome'
 cask 'iterm2'
 cask 'slack'
 cask 'zoom'
+
+# Fonts
+cask 'font-hack-nerd-font'
