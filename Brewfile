@@ -9,6 +9,7 @@ brew 'git'
 brew 'neovim'
 brew 'tmux'
 brew 'zsh'
+brew 'the_silver_searcher' # Used to filter neovim fzf plugin with .gitignore
 
 # Development
 brew 'python'
