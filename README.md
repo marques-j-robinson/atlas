@@ -16,7 +16,6 @@ This script will install programs such as [Xcode](https://developer.apple.com/xc
 3. Execute `brew.sh`.
 This script will update Homebrew, upgrade formulae, and utilize the `brew bundle` command.
 This command executes the contents of `Brewfile`.
-For more info about the `brew bundle` command, [here](https://thoughtbot.com/blog/brewfile-a-gemfile-but-for-homebrew).
 
 4. Execute `link.sh`.
 This script will establish symbolic links between `~/.dotfiles` and the `$HOME` directory.
