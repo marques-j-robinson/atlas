@@ -18,3 +18,9 @@ map <bs> 10k
 
 " Swap between current file and most recently edited file
 nnoremap <leader><leader> <c-^>
+
+" split navigation mappings
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
