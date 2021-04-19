@@ -28,6 +28,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'yuezk/vim-js'
 Plug 'MaxMEllon/vim-jsx-pretty'
 
+Plug 'Shougo/neosnippet.vim'
+Plug 'szw/vim-maximizer'
+Plug 'tmsvg/pear-tree'
+
 call plug#end()
 
 " --------------------------------------------------------------------------------------------------
