@@ -5,7 +5,11 @@
 call plug#begin()
 
 " Theme
-Plug 'dracula/vim'
+Plug 'morhetz/gruvbox'
+" Status bar
+Plug 'vim-airline/vim-airline'
+" Git
+Plug 'tpope/vim-fugitive'
 
 " File System Navigation
 Plug 'preservim/nerdtree'
@@ -40,4 +44,5 @@ endif
 
 " Theme
 syntax enable
-colorscheme dracula
+colorscheme gruvbox
+set background=dark
