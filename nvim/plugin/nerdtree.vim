@@ -8,6 +8,6 @@ let NERDTreeQuitOnOpen = 0
 let NERDTreeShowHidden = 1
 let NERDTreeCascadeSingleChildDir=1
 let g:NERDTreeStatusline = ''
-let NERDTreeIgnore = ['.git$', '.DS_Store']
+let NERDTreeIgnore = ['.git$', '.DS_Store', '__pycache__']
 let g:NERDTreeMapOpenSplit = "s"
 let g:NERDTreeMapOpenVSplit = "v"
