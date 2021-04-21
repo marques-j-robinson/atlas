@@ -1,3 +1,4 @@
+set cb=unnamed
 set autoindent
 set smartindent
 set tabstop=2
@@ -10,6 +11,7 @@ set mouse=a
 
 set number
 set relativenumber
+set colorcolumn=72
 
 let mapleader=","
 map ; :

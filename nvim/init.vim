@@ -6,31 +6,31 @@ call plug#begin()
 
 " Theme
 Plug 'morhetz/gruvbox'
-" Status bar
-Plug 'vim-airline/vim-airline'
-" Git
-Plug 'tpope/vim-fugitive'
-
 " File System Navigation
 Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
+" Git
+Plug 'tpope/vim-fugitive'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+" Status bar
+Plug 'vim-airline/vim-airline'
 " Fuzzy Finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-
 " Auto Format on Save
 Plug 'prettier/prettier'
-
 " Syntax Highlighting
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'yuezk/vim-js'
-Plug 'MaxMEllon/vim-jsx-pretty'
-
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Other
 Plug 'Shougo/neosnippet.vim'
 Plug 'szw/vim-maximizer'
 Plug 'tmsvg/pear-tree'
+Plug 'scrooloose/nerdcommenter'
+
+" Remove
+" Plug 'yuezk/vim-js'
+" Plug 'MaxMEllon/vim-jsx-pretty'
 
 call plug#end()
 
