@@ -41,34 +41,11 @@ call plug#end()
 
 " -----------------------------------------------------------------------------
 
+let mapleader=","
+
 " Editor Settings
 filetype plugin indent on
 syntax enable
 colorscheme gruvbox
-
-" Remaps
-map ; :
-map <space> 10j
-map <bs> 10k
-" Swap between current file and most recently edited file
-nnoremap <leader><leader> <c-^>
-" split navigation mappings
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
-" -----------------------------------------------------------------------------
-" Integrated Terminal
-" -----------------------------------------------------------------------------
-" turn terminal to normal mode with escape
-tnoremap <Esc> <C-\><C-n>
-" open terminal in insert mode on ctrl+n
-function! OpenTerminal()
-  startinsert
-  split term://zsh
-  resize 10
-endfunction
-nnoremap <c-n> :call OpenTerminal()<CR>
 
 lua require('marques')
