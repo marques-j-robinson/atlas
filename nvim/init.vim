@@ -47,7 +47,6 @@ syntax enable
 colorscheme gruvbox
 
 " Remaps
-let mapleader=","
 map ; :
 map <space> 10j
 map <bs> 10k

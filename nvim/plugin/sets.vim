@@ -18,3 +18,5 @@ set undofile
 set guifont=Hack-Regular:h8
 set background=dark
 set termguicolors
+
+let mapleader=","
