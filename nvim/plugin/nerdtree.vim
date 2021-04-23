@@ -8,6 +8,7 @@ let g:NERDTreeMapOpenSplit = "s"
 let g:NERDTreeMapOpenVSplit = "v"
 
 nnoremap <silent> <C-e> :NERDTreeToggle<CR>
+map <leader>g :NERDTreeFind<cr>
 
 " Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
