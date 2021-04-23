@@ -31,6 +31,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Utils
+Plug 'easymotion/vim-easymotion'
 Plug 'tmsvg/pear-tree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'szw/vim-maximizer'
