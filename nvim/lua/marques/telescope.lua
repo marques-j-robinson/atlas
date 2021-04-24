@@ -4,7 +4,7 @@ require('telescope').setup {
         file_sorter =  require('telescope.sorters').get_fzy_sorter,
         prompt_position = "top",
         sorting_strategy = "ascending",
-        
+
         file_ignore_patterns = {
           "yarn.lock",
           "package-lock.json",
@@ -16,7 +16,10 @@ require('telescope').setup {
 
         mappings = {
             i = {
-                ["<C-q"] = actions.send_to_qflist,
+                ["<C-q>"] = actions.send_to_qflist,
+            },
+            n = {
+                ["<C-h>"] = actions.file_split,
             }
         }
     },
