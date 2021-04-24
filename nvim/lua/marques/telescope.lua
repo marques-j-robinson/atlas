@@ -6,12 +6,9 @@ require('telescope').setup {
         sorting_strategy = "ascending",
 
         file_ignore_patterns = {
-            "venv/.*",
-            "yarn.lock",
-            "package-lock.json",
-            "git/*",
-            "node_modules/.*",
-            "/nvim/plugged/.*",
+            "node_modules*",
+            "/nvim/plugged*",
+            "venv*",
         },
 
 
