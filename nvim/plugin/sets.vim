@@ -1,3 +1,5 @@
+let mapleader=","
+
 set guicursor=
 set relativenumber
 set nu
