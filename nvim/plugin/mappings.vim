@@ -1,4 +1,6 @@
 " Convenience mappings
+let mapleader=","
+
 map ; :
 map H 0
 map L $

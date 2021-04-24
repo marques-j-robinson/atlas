@@ -1,5 +1,3 @@
-let mapleader=","
-
 set guicursor=
 set relativenumber
 set nu
@@ -15,8 +13,6 @@ set signcolumn=yes
 set scrolloff=8
 set noswapfile
 set nobackup
-set undodir=~/.vim/undodir
-set undofile
 set guifont=Hack-Regular:h8
 set background=dark
 set termguicolors
