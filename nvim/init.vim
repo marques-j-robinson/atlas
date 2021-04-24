@@ -31,11 +31,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Utils
-Plug 'easymotion/vim-easymotion'
+Plug 'phaazon/hop.nvim'
 Plug 'tmsvg/pear-tree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'szw/vim-maximizer'
-Plug 'mbbill/undotree'
 Plug 'sickill/vim-pasta'
 
 call plug#end()
