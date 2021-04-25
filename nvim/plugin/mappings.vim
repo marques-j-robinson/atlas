@@ -1,11 +1,9 @@
-" Convenience mappings
-let mapleader=","
+let mapleader=" "
 
+" Convenience mappings
 map ; :
 map H 0
 map L $
-"map <SPACE> 10j
-"map <BS> 10k
 
 " swap between current file and most recently edited file
 nnoremap <leader><leader> <c-^>
