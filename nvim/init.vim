@@ -9,29 +9,30 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" Syntax Highlighting
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
-" Git
-Plug 'tpope/vim-fugitive'
-
-" Snippet
-Plug 'Shougo/neosnippet.vim'
-
 " Fuzzy Finder
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
-" Statusline
-Plug 'vim-airline/vim-airline'
+" Git
+Plug 'tpope/vim-fugitive'
+
+" Lint
+Plug 'dense-analysis/ale'
+
+" Syntax Highlighting
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Code Completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Statusline
+Plug 'vim-airline/vim-airline'
+
 " Utils
 Plug 'phaazon/hop.nvim'
+Plug 'Shougo/neosnippet.vim'
 Plug 'tmsvg/pear-tree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'szw/vim-maximizer'
