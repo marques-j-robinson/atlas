@@ -38,6 +38,7 @@ Plug 'tmsvg/pear-tree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'szw/vim-maximizer'
 Plug 'sickill/vim-pasta'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
