@@ -1,4 +1,9 @@
-export PATH=$HOME/bin:$PATH
+# Path
+export PATH=$PATH:.
+export PATH=/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:$PATH
+export PATH=$HOME/.composer/vendor/bin:$PATH
+
 export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
@@ -21,5 +26,6 @@ source $ZSH/oh-my-zsh.sh
 
 export TERM=xterm-256color
 
+# Node Version Manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
