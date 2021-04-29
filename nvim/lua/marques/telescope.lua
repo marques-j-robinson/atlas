@@ -38,14 +38,20 @@ require('telescope').setup(settings)
 
 -- Telescope extensions must be loaded after the setup function
 require('telescope').load_extension('fzf')
+require('telescope').load_extension('project')
 
 local M = {}
+local project_actions = require("telescope._extensions.project_actions")
 
-function M.search_dotfiles()
-    require('telescope.builtin').find_files({
-        prompt_title = '~ VimRC ~',
-        cwd = '~/.dotfiles/',
-    })
+function M.projects()
+  require('telescope').extensions.project.project({
+    change_dir = true,
+    attach_mappings = function(prompt_bufnr, map)
+      map('i', '<cr>', actions.select_default)
+      map('i', '<esc>', '<esc>')
+      return true
+    end
+  })
 end
 
 return M
