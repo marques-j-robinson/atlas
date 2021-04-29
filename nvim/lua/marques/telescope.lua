@@ -12,6 +12,7 @@ local settings = {
             "%.svg",
             "yarn.lock",
             "package%-lock.json",
+            "git/*",
             "%/node_modules/%",
         },
 
@@ -52,6 +53,12 @@ function M.projects()
       return true
     end
   })
+end
+
+function M.find_files()
+    require('telescope.builtin').find_files({
+        hidden = true
+    })
 end
 
 return M
