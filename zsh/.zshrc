@@ -20,3 +20,6 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 export TERM=xterm-256color
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
