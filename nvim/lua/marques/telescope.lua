@@ -2,7 +2,7 @@ local actions = require('telescope.actions')
 
 local settings = {
     defaults = {
-        file_sorter =  require('telescope.sorters').get_fzy_sorter,
+        --file_sorter =  require('telescope.sorters').get_fzy_sorter,
         prompt_position = "top",
         sorting_strategy = "ascending",
 
@@ -39,25 +39,22 @@ require('telescope').setup(settings)
 
 -- Telescope extensions must be loaded after the setup function
 require('telescope').load_extension('fzf')
-require('telescope').load_extension('project')
 
 local M = {}
-local project_actions = require("telescope._extensions.project_actions")
-
-function M.projects()
-  require('telescope').extensions.project.project({
-    change_dir = true,
-    attach_mappings = function(prompt_bufnr, map)
-      map('i', '<cr>', actions.select_default)
-      map('i', '<esc>', '<esc>')
-      return true
-    end
-  })
-end
 
 function M.find_files()
     require('telescope.builtin').find_files({
-        hidden = true
+        prompt_title = "~ files ~",
+        follow = true,
+        hidden = true,
+    })
+end
+
+function M.search_dotfiles()
+    require('telescope.builtin').find_files({
+        prompt_title = "~ vimrc ~",
+        cwd = '~/.dotfiles/',
+        hidden = true,
     })
 end
 
