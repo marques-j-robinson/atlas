@@ -1,7 +1,17 @@
 local actions = require('telescope.actions')
 
-local settings = {
+local tele_opts = {
     defaults = {
+        vimgrep_arguments = {
+            'rg',
+            '--color=never',
+            '--follow',
+            '--no-heading',
+            '--with-filename',
+            '--line-number',
+            '--column',
+            '--smart-case',
+        },
         --file_sorter =  require('telescope.sorters').get_fzy_sorter,
         prompt_position = "top",
         sorting_strategy = "ascending",
@@ -35,12 +45,30 @@ local settings = {
     }
 }
 
-require('telescope').setup(settings)
+require('telescope').setup(tele_opts)
 
 -- Telescope extensions must be loaded after the setup function
 require('telescope').load_extension('fzf')
 
 local M = {}
+
+function M.live_grep()
+    require('telescope.builtin').live_grep({
+        prompt_title = "~ live grep ~",
+        layout_strategy = "vertical",
+        layout_config = {
+            mirror = true,
+            preview_height = 0.20,
+        },
+    })
+end
+
+function M.buffers()
+    require('telescope.builtin').buffers({
+        prompt_title = "~ buffers ~",
+        shorten_path = false,
+    })
+end
 
 function M.find_files()
     require('telescope.builtin').find_files({
@@ -48,6 +76,14 @@ function M.find_files()
         follow = true,
         hidden = true,
     })
+end
+
+function M.current_dir_files()
+  require('telescope.builtin').find_files({
+    prompt_title = string.format("~ files in [%s] ~", vim.fn.expand("%:h")),
+    cwd = vim.fn.expand("%:p:h"),
+    hidden = true,
+  })
 end
 
 function M.search_dotfiles()
