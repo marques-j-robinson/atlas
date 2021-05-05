@@ -18,9 +18,6 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 " Git
 Plug 'tpope/vim-fugitive'
 
-" Lint
-Plug 'dense-analysis/ale'
-
 " Syntax Highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
