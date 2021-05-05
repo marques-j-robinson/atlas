@@ -1,6 +1,12 @@
 # Reload zshrc
 alias szsh="source ~/.zshrc"
 
+# Git
+alias ga="git add"
+alias gaa="git add ."
+alias gc="git commit -m"
+alias gs="git status"
+
 # tmux
 alias t="tmux -u -2"
 alias ta="t attach -t"
