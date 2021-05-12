@@ -4,8 +4,16 @@ alias szsh="source ~/.zshrc"
 # Git
 alias ga="git add"
 alias gaa="git add ."
-alias gc="git commit -m"
-alias gs="git status"
+alias gb="git branch"
+alias gc="git commit"
+alias gca="git commit --append"
+alias gcan="git commit --append --no-edit"
+alias gcm="git commit -m"
+alias gco="git checkout"
+alias gcom="git checkout main"
+alias glog="git log"
+alias gst="git status"
+alias gs="git stash"
 
 # tmux
 alias t="tmux -u -2"

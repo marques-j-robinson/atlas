@@ -34,17 +34,6 @@
   changed = yellow
   added = green
   untracked = cyan
-[alias]
-	aa = add --all
-	br = branch
-	di = diff
-	ds = diff --staged
-	ca = commit --append
-	can = commit --append --no-edit
-  cm = commit -m
-  co = checkout
-  st = status
-	s = stash
 [diff]
   tool = vimdiff
 [color "diff-highlight"]
