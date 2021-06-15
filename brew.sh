@@ -17,8 +17,6 @@ brew install zsh
 # Development
 brew install git
 brew install --HEAD neovim # For version 0.5.0
-brew install composer
 brew install python
 brew install nvm
 brew install yarn
-brew install php@7.3
