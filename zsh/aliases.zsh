@@ -15,12 +15,6 @@ alias glog="git log"
 alias gst="git status"
 alias gs="git stash"
 
-# tmux
-alias t="tmux -u -2"
-alias ta="t attach -t"
-alias td="t detach"
-alias tks="t kill-session"
-
 # vim
 alias v=nvim
 alias vi=nvim

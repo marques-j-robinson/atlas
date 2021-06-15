@@ -11,7 +11,6 @@ brew install font-hack-nerd-font
 # Terminal
 brew install coreutils # Those that come with macOS are outdated
 brew install awscli
-brew install tmux
 brew install zsh
 
 # Development

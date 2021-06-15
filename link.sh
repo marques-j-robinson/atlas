@@ -14,13 +14,10 @@ function env_setup {
     link git/.gitignore ~
 
     # neovim
-    mkdir -p ~/.config 
+    mkdir -p ~/.config
     mkdir -p ~/.local/share/nvim
     link nvim ~/.config/nvim
     link nvim/plugged ~/.local/share/nvim/plugged
-
-    # tmux
-    link tmux/.tmux.conf ~
 
     # zsh
     link zsh/.zshrc ~
