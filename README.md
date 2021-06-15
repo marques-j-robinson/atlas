@@ -4,7 +4,7 @@ The Primordial Titan who carried the weight of the heavens on his back.
 A.K.A. my dotfiles.
 
 ## Setup
-1. Clone this repo to `~/.dotfiles`. Everything is maintained within `~/.dotfiles`.
+1. Clone this repo into `~/.dotfiles` directory.
 ```
 git clone https://github.com/marques-j-robinson/atlas.git ~/.dotfiles && cd ~/.dotfiles
 ```
@@ -14,7 +14,7 @@ This script will install programs such as [Xcode](https://developer.apple.com/xc
 [Oh My Zsh](https://ohmyz.sh/), and [Vim Plug](https://github.com/junegunn/vim-plug).
 
 3. Execute `brew.sh`.
-This script will update Homebrew, upgrade formulae, and utilize the `brew bundle` command.
+This script will update Homebrew, upgrade existing formulae, then install formulae.
 
 4. Execute `link.sh`.
 This script will establish symbolic links between `~/.dotfiles` and the `$HOME` directory.
