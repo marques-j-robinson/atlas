@@ -8,15 +8,15 @@ A.K.A. my dotfiles.
 ```
 git clone https://github.com/marques-j-robinson/atlas.git ~/.dotfiles && cd ~/.dotfiles
 ```
-2. Execute `setup.sh`.
+2. Execute `bash bin/setup`.
 This script will install programs such as [Xcode](https://developer.apple.com/xcode/),
 [Homebrew](https://brew.sh/), [Zsh](https://www.zsh.org/),
 [Oh My Zsh](https://ohmyz.sh/), and [Vim Plug](https://github.com/junegunn/vim-plug).
 
-3. Execute `brew.sh`.
+3. Execute `bash bin/brew`.
 This script will update Homebrew, upgrade existing formulae, then install formulae.
 
-4. Execute `link.sh`.
+4. Execute `bash bin/link`.
 This script will establish symbolic links between `~/.dotfiles` and the `$HOME` directory.
 
 ## Inspiration
