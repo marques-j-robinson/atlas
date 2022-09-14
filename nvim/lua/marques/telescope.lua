@@ -23,7 +23,7 @@ local tele_opts = {
             "yarn.lock",
             "package%-lock.json",
             "git/*",
-            "%/node_modules/%",
+            "node_modules/*",
         },
 
 
