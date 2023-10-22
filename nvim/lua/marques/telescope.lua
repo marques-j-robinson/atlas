@@ -13,7 +13,9 @@ local tele_opts = {
             '--smart-case',
         },
         --file_sorter =  require('telescope.sorters').get_fzy_sorter,
-        prompt_position = "top",
+        layout_config = {
+            prompt_position = "top",
+        },
         sorting_strategy = "ascending",
 
         file_ignore_patterns = {
