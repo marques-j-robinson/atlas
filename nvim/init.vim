@@ -21,9 +21,6 @@ Plug 'tpope/vim-fugitive'
 " Syntax Highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-" Code Completion
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 " Statusline
 Plug 'vim-airline/vim-airline'
 
