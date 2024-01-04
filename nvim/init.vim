@@ -3,6 +3,9 @@ call plug#begin()
 " Theme
 Plug 'morhetz/gruvbox'
 
+" Emmet
+Plug 'mattn/emmet-vim'
+
 " File System
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
